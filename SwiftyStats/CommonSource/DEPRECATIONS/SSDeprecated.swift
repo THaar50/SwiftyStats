@@ -23,7 +23,9 @@
  */
 
 import Foundation
+#if os(macOS) || os(iOS)
 import os.log
+#endif
 
 /// :nodoc:
 @available(*, deprecated, message: "Use SSProbDist.StudentT.para(_:) instead")
